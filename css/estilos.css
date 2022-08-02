@@ -26,7 +26,7 @@ body{
 .rz{
     background: url(../img/bg-features.png);
 }
-nav{
+.navi{
     
         display: flex;
         align-items: center;
@@ -38,7 +38,7 @@ nav{
         color: #fff
 }
 
-nav a{
+.navi a{
     text-decoration: none;
     color: #fff;
 }
@@ -193,4 +193,156 @@ input{
     text-decoration: none;
     color: #000;
     font-size: 0.8em;
+}
+/*Estilos Dashboard*/
+.das{
+    background-image: url(../img/das_1.jpeg);
+    background-repeat: no-repeat;
+}
+/*datos dashboard*/
+.padreD{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/das_1.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: grid;
+    grid-template-columns: 20% auto;
+}
+.Lhotelia{
+    width: 230px;
+    height: 100%;
+    background-color: var(--azulnegro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.h3{
+    color: #fff;
+    font-size: 1.2em;
+}
+.imgLh{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 190px;
+    height: auto;
+    padding: 20px;
+    align-items: center;
+    color: var(--blanco);
+    background-image: url(../img/Group\ 200.svg);
+    background-size: cover;
+}
+.imgLh a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 1.3em;
+}
+.inputt{
+    width: 250px;
+    height: 20px;
+}
+.lista{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.lista a{
+    text-decoration: none;
+    color: #fff;
+}
+.linksesion{
+    text-decoration: none;
+    color: #fff;
+}
+.crsesion{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #1c1e27;
+    text-decoration: none;
+    color: #fff;
+}
+.contform{
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.contdatos{
+    position: relative;
+    margin-left: 700px;
+    width: 1000px;
+    height:1000px;
+    grid-template-columns: auto;
+    grid-template-rows: 10% auto;
+    padding: 30px;
+    background-color: rgba(225, 225, 225, .8);
+}
+.contdatos h1{
+    grid-column: 1/ 3;
+    text-align: center;
+}
+.botonesf{
+    width: 150px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 5px 0;
+    background-color: var(--azuloscuro);
+    color: var(--blanco);
+}
+.botonesf i{
+    font-size: 1.8rem;
+    margin: 5px 10px;
+}
+.cambiarctñ{
+    background-color: #000;
+    color: #fff;
+    font-size: 1.5px;
+    width: 150px;
+    padding: 10px;
+}
+.infouser{
+    position: relative;
+    width: 100px;
+    height:10px;
+}
+.datos{
+    margin-left: 200px;
+    margin-top: -230px;
+    position: absolute;
+    width: 100px;
+    height:90px;
+}
+.datos label{
+    color: #000;
+}
+.edi{
+    width: 100px;
+    background-color: #000;
+    height: 40px;
+    color: #fff;
+}
+.ctñ{
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 45% auto;
+}
+.ctñ label{
+    color: #000;
+    display: inline-block;
 }
