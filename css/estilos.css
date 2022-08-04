@@ -15,6 +15,18 @@
 
 body{
     margin: 0;
+    display: flexbox;
+}
+.navegacion{
+    background-color: rgba(1, 10, 52, 0.838);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+.navegacion-hr{
+    width: 100%;
+    background-color: var(--blanco);
 }
 .hdr{
     background: url(../img/slide1.jpg);
@@ -37,8 +49,10 @@ body{
         padding: 1rem;
         color: #fff
 }
-
-.navi a{
+/*Resolución tablet*/
+@media screen and (min-width: 768px){
+}
+.nav a{
     text-decoration: none;
     color: #fff;
 }
@@ -46,13 +60,36 @@ body{
     padding: 1rem;
     color: var(--blanco);
     text-decoration: none;
-
-    }
-
+    text-align: center;
+}
+nav a:hover{
+    background-color: #0B3860;
+    width: 100%;
+}
+.navbar-button{
+    background-color:transparent;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    padding: 0.5rem;
+    font-family: 'Marcellus', serif;
+    color: var(--blanco);
+}
 .logo img{
     height: 3rem;
+    background-color: var(--negro2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 40%;
+    max-width: 200px; 
+
 }
-    
+.logo i{
+    color: var(--blanco);
+    font-size: 2rem;
+}
 .pf{
     position:absolute 2rem;
     top: 20rem;
@@ -118,7 +155,6 @@ body{
     align-items: center;
     border-radius: 5px;
 }
- 
 .feature i{
     font-size: 2.2em;
     margin-bottom: 1.5rem;
@@ -126,7 +162,6 @@ body{
 .feature-blue{
     background-color: #00325eae;
 }
- 
 .feature-black{
     background-color: rgba(0,0,0,0.59);
 }
@@ -135,6 +170,44 @@ body{
     width: 500px;
     display: flex;
 }
+/*Resolución notebooks*/
+@media screen and (min-width: 1024px){
+    nav{
+        display: flex;
+        flex-direction: row; /*cambiamos la disposición de los elementos*/
+        width: 100%;
+        justify-content: space-between;
+        background-color: var(--negro2);
+    }
+    .logo{
+        padding: 1rem;
+    }
+    .logo img{
+        width: 100%;
+        max-width: 180px;       
+    }
+    .logo i{ /*ocultamos el ícono bars del menú hamburguesa*/
+        display: none;
+    } 
+    .navegacion{
+        background-color: var(--negro2);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .navegacion-hr{ /*ocultamos la barra de división*/
+        display: none;
+    }
+    .navbar-button{
+        background-color:var(--azuloscuro);
+    }       
+}
+/*Resolución notebooks*/
+@media screen and (min-width: 1308px){
+    
+}
+
+
 /*Estilos Login*/
 .login{
     background-image: url(../img/login_2.jpg);
@@ -206,8 +279,9 @@ input{
     background-image: url(../img/das_1.jpeg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    display: grid;
+    display: flex;
     grid-template-columns: 20% auto;
+    font-family: 'Marcellus', serif;
 }
 .Lhotelia{
     width: 230px;
@@ -261,7 +335,7 @@ input{
 }
 .crsesion{
     width: 100%;
-    height: auto;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -273,8 +347,7 @@ input{
 .contform{
     position: absolute;
     width: 1000px;
-    height: 1000px;
-    display: flex;
+    height:0px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -282,13 +355,13 @@ input{
 }
 .contdatos{
     position: relative;
-    margin-left: 700px;
+    display: flexbox;
+    margin-left: 350px;
     width: 1000px;
-    height:1000px;
-    grid-template-columns: auto;
-    grid-template-rows: 10% auto;
+    height:620px;
     padding: 30px;
     background-color: rgba(225, 225, 225, .8);
+    border-radius: 8px;
 }
 .contdatos h1{
     grid-column: 1/ 3;
@@ -297,7 +370,6 @@ input{
 .botonesf{
     width: 150px;
     height: auto;
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
@@ -323,19 +395,22 @@ input{
 }
 .datos{
     margin-left: 200px;
-    margin-top: -230px;
-    position: absolute;
-    width: 100px;
-    height:90px;
+    margin-top: -210px;
+    display: grid;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    height: 550px;
 }
 .datos label{
     color: #000;
 }
 .edi{
-    width: 100px;
+    width: 180px;
     background-color: #000;
     height: 40px;
     color: #fff;
+    border-radius: 5px;
 }
 .ctñ{
     width: 100%;
@@ -345,4 +420,10 @@ input{
 .ctñ label{
     color: #000;
     display: inline-block;
+}
+.chx{
+    display: flex;
+    justify-content: flex-start;
+    width: 100px;
+    padding: 20px;
 }
