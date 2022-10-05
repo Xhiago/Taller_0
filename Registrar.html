@@ -2,76 +2,159 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
-    <script src="https://kit.fontawesome.com/b72f550c62.js" crossorigin="anonymous"></script>
-    <title>Dashboard</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="icon" type="image/x-icon" href="img/hotelia campana.svg">
+        <script src="https://kit.fontawesome.com/6131ecdde6.js" crossorigin="anonymous"></script>
+    <title>Registro</title>
 </head>
-<body class="das">
-    <div class="padreD">
-        <div class="Lhotelia">
-            <div class="imgLh">
-                <img src="img/Hotelia horizontal blanco.svg" width="150px" alt=""><br><br><br>
-                <h3 class="h3">Angie Vargas</h3>
-                <p class="h3">angievarags2@gmail.com</p>
-            </div>
-            <div class="crsesion">
-                <a href="login.html" class="linksesion"><i class="fa-soli fa-right-from-bracket">Cerrar Sesión</i></a>
-            </div>
+<body class="body">
+<section class="sectionr">
+        <div>
+            <img class="imgr" src="img/Hotelia horizontal blanco.svg">
+            <p class="bienvenido1">Un lugar en tu corazón</p>
+            <p class="bienvenido2">Eres más que bienvenido</p>
         </div>
-            <div class="contform">
-                <div class="contdatos">
-                    <h1>Bienvenido, Angie Vargas</h1>
-                    <div class="foto">
-                        <img src="img/ester.jpg" width="146px" alt="">
-                        <div class="botonesf">
-                            <i class="fa-soli fa-file-arrow-up"></i>
-                            <i class="fa-soli fa-upload"></i>
-                        </div>
-                        <button class="cambiarctñ">Cambiar contraseña</button>
-                    </div>
-                    <div class="infouser">
-                        <div class="datos">
-                            <div>
-                                <label for="">Tipo de Documento</label>
-                                <input type="text" placeholder="Cédula de ciudadania" class="inputt" name="" id="">
-                            </div>
-                            <div>
-                                <label for="">Nombre</label><br>
-                                <input type="text" class="inputt" placeholder="Angie Camila" name="" id="">
-                            </div>
-                            <div>
-                                <label for="">Fecha de nacimiento</label>
-                                <input type="date" class="inputt" placeholder="10/08/1967" name="" id="">
-                            </div>
-                            <div>
-                                <label for="">Genero</label>
-                                <div class="chx">
-                                    <input type="radio" class="inputt" value="Mujer" name="" id="" checked="">Mujer
-                                    <input type="radio" class="inputt" value="Hombre" name="" id="">Hombre
-                                    <input type="radio" class="inputt" value="Otros" name="" id="">Otros
-                                </div>  
-                            </div>
-                            <div>
-                                <label for="">Email</label><br>
-                                <input type="email" class="inputt" placeholder="angievarags2@gmail.com" name="" id="">
-                            </div><br>
-                            <div>
-                                <button class="edi">Actualizar</button>
-                            </div>
-                            <div class="ctñ">
-                                <label for="">Contraseña</label><br>
-                                <input type="password" class="inputt" placeholder="......." name="" id="">
-                            </div>
-                            <div>
-                                <label for="">Confirmar contraseña</label><br>
-                                <input type="pasword" class="inputt" name="" id="">
-                            </div>  
-                            <button class="edi">Cambiar</button>
-                        </div>
-                    </div>
+    </section>
+    <section class="formPadre">
+        <h1 class="h1r">Registrate</h1>
+        <div class="formularioMv">
+            <div class="inputs">
+                <label for="">Tipo de documento</label>
+                <input type="text" class="form-control" placeholder="Escoja una opción">
+            </div>
+            <div class="inputs">
+                <label for="">Número de documento</label>
+                <input type="text" class="form-control" placeholder="Numero de documento">
+            </div>
+            <div class="inputs">
+                <label for="">Nombres</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="inputs">
+                <label for="">Apellidos</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="inputs">
+                <label for="">Fecha nacimiento</label>
+                <input type="date" class="form-control">
+            </div>
+            <div class="form-check">
+                <p>Género</p>
+                <div>
+                    <form>
+                        <label>
+                            <input type="radio" value="" name="genero">Mujer
+                        </label>
+                        <label>
+                            <input type="radio" value="" name="genero">Hombre
+                        </label>
+                        <label >
+                            <input type="radio" value="" name="genero">Otro
+                        </label>
+                    </form>
                 </div>
             </div>
-    </div>
+            <div class="inputs">
+                <label for="">Email</label>
+                <input type="email" class="form-control">
+            </div>
+            <div class="inputs">
+                <label for="">Teléfono de contacto</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="inputs">
+                <label for="">País de origen</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="inputs">
+                <label for="">Foto</label>
+                <input type="file" class="form-control">
+            </div>
+            <div class="contraseña">
+                <label for="">Contraseña</label>
+                <input type="password" class="form-control">
+            </div>
+            <div class="confirmar">
+                <label for="">Confirmar contraseña</label>
+                <input type="password" class="form-control">
+            </div>
+        </div>
+        <div class="formularioDk">
+            <div class="datos1">
+                <div class="inputs">
+                    <label for="">Tipo de documento</label>
+                    <input type="text" class="form-control" placeholder="">
+                </div>
+                <div class="inputs">
+                    <label for="">Nombres</label>
+                    <input type="text" class="form-control" placeholder="">
+                </div>
+                <div class="inputs">
+                    <label for="">Fecha nacimiento</label>
+                    <input type="date" class="form-control" placeholder="">
+                </div>
+                <div class="inputs">
+                    <label for="">Email</label>
+                    <input type="email" class="form-control" placeholder="">
+                </div>
+                <div class="inputs">
+                    <label for="">País de origen</label>
+                    <input type="text" class="form-control" placeholder="">
+                </div>
+                <div class="inputs">
+                    <label for="">Contraseña</label>
+                    <input type="password" class="form-control">
+                </div>
+            </div>
+            <div class="info2">
+                <div class="inputs">
+                    <label for="">Numero de documento</label>
+                    <input type="text" class="form-control" placeholder="">
+                </div>
+                <div class="inputs">
+                    <label for="">Apellidos</label>
+                    <input type="text" class="form-control" placeholder="">
+                </div>
+                <div class="radios">
+                    <p>Género</p>
+                    <div class="generoSl">
+                        <form>
+                            <label>
+                                <input type="radio" value="" name="genero" checked>Mujer
+                            </label>
+                            <label>
+                                <input type="radio" value="" name="genero">Hombre
+                            </label>
+                            <label>
+                                <input type="radio" value="" name="genero">Otro
+                            </label>
+                        </form>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <label for="">Teléfono de contacto</label>
+                    <input type="text" class="form-control" placeholder="">
+                </div>
+
+                <div class="inputs">
+                    <label for="">Foto</label>
+                    <input type="file" class="form-control" placeholder="Subir foto">
+                </div>
+
+                <div class="inputs">
+                    <label for="">Confirmar contraseña</label>
+                    <input type="password" class="form-control">
+                </div>
+                <div class="inputs">
+                    <label><input class="terminosyc" type="checkbox" value="">Acepto terminos y condiciones</label>
+                <div class="form-gruop-bt"><button class="ingresar">Ingresar</button></div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
 </html>

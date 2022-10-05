@@ -5,37 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" type="image/x-icon" href="img/hotelia campana.svg">
     <script src="https://kit.fontawesome.com/6131ecdde6.js" crossorigin="anonymous"></script>
+    <!-- <script src="js/menuh.js"></script> -->
     <title>Index</title>
 </head>
-<body>
-        <nav class="nav">
-            <div class="logo">
-                <img src="img/Hotelia horizontal blanco.svg" alt="">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+<script type="text/javaScript">
+    function desplegar(){
+    document.getElementById("ocultar").style.display = "block"
+}
+    function incognito(){
+        document.getElementById("ocultar").style.display = "none"
+}
+function agrupar(){
+    var desplegar=document.getElementById("ocultar")
+    if(ocultar.style.display=="block"){
+        incognito()
+    }else{
+        desplegar()
+    }
+}
+</script>
+    <nav>
+        <div class="logo">
+            <img src="img/Hotelia horizontal blanco.svg" alt="">
+            <i class="fa-solid fa-bars" onclick="agrupar()"></i>
+        </div>
+        <div id="ocultar">
             <div class="navegacion">
-            <a href="" class="item" >Inicio</a> 
-            <a href="" class="item">Ubicanos</a> 
-            <a href="" class="item">Opiniones </a> 
+            <a href="" class="item" >Inicio</a>
+            <a href="" class="item">Ubicanos</a>
+            <a href="" class="item">Opiniones </a>
             <hr class="navegacion-hr" noshade="">
-            <a href="login.html"><button class="navbar-button"></button><i class="fa-solid fa-user"></i>Iniciar sesion</a>
+            <a href="login.html" class=""><button class="navbar-button"><i class="fa-solid fa-user"></i> Iniciar Sesión</button></a>
         </div>
-        </nav>
-    <div>
-        <header class="hdr">
-        <div class="pf"><h1 class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis molestiae quis, eos odio quibusdam repellat
-        similique obcaecati nam facilis, cum quod voluptatibus quaerat accusamus distinctio iusto, dolores harum nobis? Temporibus.</h1></div>
+    </div>
+    </nav>
+        </div>
+    <header class="headerr">
+        <h1 class="texthr">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
     </header>
-    </div>
-    <div class="sec1">
-            <div class="pf2"><p>Estamos ubicados en el barrio de la Cabrera al norete de Bofotà, Lorem, ipsum dolor sit amet consectetur adipisicing elit. A sed quibusdam modi temporibus tempora eius facere ea voluptas cum,
+    <section class="sec1">
+            <p>Estamos ubicados en el barrio de la Cabrera al norete de Bofotà, Lorem, ipsum dolor sit amet consectetur adipisicing elit. A sed quibusdam modi temporibus tempora eius facere ea voluptas cum,
                 dolor doloremque aut eveniet architecto culpa ducimus sit hic accusamus quod. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ipsum unde maiores iste quo eius officiis excepturi, deserunt vitae, obcaecati deleniti qui aliquid reprehenderit,
-                placeat dignissimos dolore reiciendis distinctio blanditiis.</p></div>
-        <div class="img">
-            <img src="img/Hotelia negro vertical.svg " alt="" class="hnv">
-        </div>
-    </div>
+                placeat dignissimos dolore reiciendis distinctio blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nemo modi hic quisquam ea minus quis doloremque deleniti facilis quasi error temporibus autem amet tempora explicabo velit reprehenderit rerum numquam.
+                Temporibus fuga minima tenetur consequatur, tempore ab porro corrupti placeat nisi, quas sed expedita deserunt debitis? Quisquam illum voluptatum dolor dignissimos sit aperiam quos provident consectetur iusto ipsa, sequi quasi?
+                Error, voluptas! Porro blanditiis omnis quibusdam. Dignissimos, quis! Dignissimos, perspiciatis ipsa dolores iusto aspernatur eligendi. Distinctio, labore. Id tempora nesciunt ex voluptatibus ullam recusandae, placeat, porro hic, itaque error aliquam.</p>
+            <div class="img">
+                <img src="img/Hotelia negro vertical.svg " alt="">
+            </div>
+            </section>
     <section id="features">
         <h2 class="features-title">Razones por las que disfrutarás quedarte con nosotros</h2>
         <div class="features-description">
@@ -58,25 +77,114 @@
         </div>
     </section>
 
-    <!--<div class="rz">
-        <section>
-            <div>
-            <h2>Razones por las que disfrutaras quedarte  con nosotros.</h2>
-        </div>
-            <div> <img src="" alt=""> </div>
-            <div><img src="" alt=""> </div>
-            <div><img src="" alt=""> </div>
-            <div><img src="" alt=""> </div>
-            
-        </section>
-    </div>-->
     <div class="sc2">
-        <section>
-            <h2>Ubícanos</h2>
+        <h2>Ubícanos</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15906.327806643096!2d-74.0583991731562!3d4.668373945742931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a8a4da45287%3A0xda4c0374bbc71576!2sLa%20Cabrera%2C%20Localidad%20de%20Chapinero%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1658861999116!5m2!1ses!2sco"
-            width="900" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
             <p>AVENIDA CARRERA 8, N 12A-42 BOGOTÀ D.C COLOMBIA</p>
+            <hr class="hrm">
             <P>+57 601-456-7899</P>
     </div>
+</section>
+<div class="nosotros">
+    Nuestro usuarios dicen...
+</div>
+<section class="opinion">
+    <div class="targets">
+            <div class="image">
+                <img src="img/tarjetas/p1.png">
+
+                <div>
+                    <span class="name">Diego Rodriguez</span>
+                <div class="estrellas">
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                </div>
+                </div>
+            </div>
+            <div class="loremc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus consequatur
+                doloribus totam quo quibusdam saepe assumenda ad voluptates dolor aliquam.
+            </div>
+    </div>
+    <div class="targets">
+        <div class="image">
+            <img src="img/tarjetas/p2.png">
+
+            <div>
+                <span class="name">Diana Garcia</span>
+            <div class="estrellas">
+                <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+            </div>
+            </div>
+    </div>
+        <div class="loremc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus consequatur
+            doloribus totam quo quibusdam saepe assumenda ad voluptates dolor aliquam.
+        </div>
+</div>
+<div class="targets">
+    <div class="image">
+        <img src="img/tarjetas/p3.png">
+        <div>
+            <span class="name">Marco antonio</span>
+        <div class="estrellas">
+        <i class="fas fa-star star"></i>
+        <i class="fas fa-star star"></i>
+        <i class="fas fa-star star"></i>
+        <i class="fas fa-star star"></i>
+        <i class="fas fa-star star"></i>
+        </div>
+        </div>
+    </div>
+    <div class="loremc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus consequatur
+        doloribus totam quo quibusdam saepe assumenda ad voluptates dolor aliquam.
+    </div>
+</div>
+</section>
+<footer>
+    <p class="loremft">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos
+        voluptatem labore
+        maxime aliquam facilis illo enim obcaecati beatae veniam earum!</p>
+    <hr>
+    <div class="contactos">
+        <div class="ubicacion">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>
+                Avenida carrera 8, #12A-42, Bogotá DC,<br>Colombia
+            </p>
+        </div>
+        <div class="telefono">
+            <i class="fa-solid fa-phone"></i>
+            <p>
+                +57 601 4567899
+            </p>
+        </div>
+    </div>
+    <hr>
+    <div class="politicaPadre">
+        <p class="politicasypv">
+            Politicas de privacidad
+        </p>
+        <p>
+            Politicas de privacidad
+        </p>
+    </div>
+    <hr>
+    <div class="redes-sociales">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+    </div>
+</footer>
+</div>
 </body>
 </html>
